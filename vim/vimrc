@@ -59,7 +59,10 @@ endif
 " Will allow you to use :w!! to write to a file using sudo if you forgot to sudo vim file
 cmap w!! %!sudo tee > /dev/null %
 
+" ====================================================================
 " Start of Vundle configuration
+" ====================================================================
+" install vundle with: git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 set nocompatible               " be iMproved
 filetype off                   " required!
 
@@ -100,8 +103,10 @@ filetype plugin indent on     " required!
  "
  " see :h vundle for more details or wiki for FAQ
  " NOTE: comments after Bundle command are not allowed..
-" End of Vundle configuration
 
+" ====================================================================
+" End of Vundle configuration
+" ====================================================================
 
 " automatically reload configuration when I modify .vimrc
 augroup reload_vimrc " {
