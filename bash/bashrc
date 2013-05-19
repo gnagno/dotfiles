@@ -1,6 +1,7 @@
 export LS_OPTIONS='--color=auto'
 eval `dircolors`
 alias ls='ls $LS_OPTIONS'
+alias grep='grep --color=auto'
 
 # start of git specific stuff
 function parse_git_branch () {
