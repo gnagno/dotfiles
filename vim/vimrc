@@ -39,6 +39,17 @@ map <C-right> :tabn<cr>
 map <C-n> :tabnew<cr>
 map <C-w> :tabclose<cr>
 
+" split windows mappings
+map <A-Up> :wincmd k<CR>
+map <A-Down> :wincmd j<CR>
+map <A-Left> :wincmd h<CR>
+map <A-Right> :wincmd l<CR>
+" the next four are now working, I would prefear to move with Alt+letters
+map <A-k> :wincmd k<CR>
+map <A-j> :wincmd j<CR>
+map <A-h> :wincmd h<CR>
+map <A-l> :wincmd l<CR>
+
 let mapleader=','
 if exists(":Tabularize")
   nmap \t= :Tabularize /=<CR>
@@ -84,6 +95,9 @@ Bundle "garbas/vim-snipmate"
 
 Bundle 'ctrlp.vim'
 Bundle 'Lokaltog/vim-powerline'
+
+" ack plugin for searching in code
+Bundle 'mileszs/ack.vim'
 
 filetype plugin indent on     " required!
 "
