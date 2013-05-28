@@ -5,6 +5,7 @@
   co    = checkout
   pr    = pull --rebase
   week  = log --all --pretty=format:'%h %cd %s (%an)' --since='7 days ago'
+  log   = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
 [user]
 	name  = Ignazio Mostallino
 	email = gnagno@gmail.com
