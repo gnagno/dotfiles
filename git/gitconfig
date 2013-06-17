@@ -1,21 +1,23 @@
 [alias]
-	st    = status
-	graph = log --all --graph --decorate --abbrev-commit  # --pretty = format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+  st    = status
+  graph = log --all --graph --decorate --abbrev-commit  # --pretty = format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
   br    = branch
   co    = checkout
   pr    = pull --rebase
   week  = log --all --pretty=format:'%h %cd %s (%an)' --since='7 days ago'
-  lg   = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
-[user]
-	name  = Ignazio Mostallino
-	email = gnagno@gmail.com
+  lg    = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
 [color]
 	ui = auto
 [core]
 	editor = vim
 [merge]
 	tool = meld
+	autocrlf = input
 [mergetool "meld"]
 	cmd = /usr/bin/meld
 [push]
 	default = simple
+[github]
+	user = gnagno
+[include]
+  path = .gitconfig.user
