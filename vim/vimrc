@@ -2,10 +2,10 @@
 "           GENERAL SETTINGS
 " ===========================================
 syntax on
-colorscheme desert
+colorscheme pablo
 
 set number
-set cursorline
+set cursorline cursorcolumn
 set backupdir=~/.tmp
 set directory=~/.tmp " Don't clutter my dirs up with swp and tmp files
 set hlsearch " highlight search results
@@ -124,3 +124,4 @@ augroup reload_vimrc " {
     augroup END " }
 
 let g:Powerline_symbols = 'unicode'
+let ruby_space_errors = 1
