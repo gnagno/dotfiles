@@ -1,12 +1,11 @@
 " ===========================================
 "           GENERAL SETTINGS
 " ===========================================
-syntax on
+syntax on 
 colorscheme pablo
 
 set number
 set cursorline cursorcolumn
-set colorcolumn=80
 set backupdir=~/.tmp
 set directory=~/.tmp " Don't clutter my dirs up with swp and tmp files
 set hlsearch " highlight search results
@@ -101,6 +100,8 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'mileszs/ack.vim'
 
 Bundle 'ecomba/vim-ruby-refactoring'
+
+Bundle 'christoomey/vim-tmux-navigator'
 
 filetype plugin indent on     " required!
 "
