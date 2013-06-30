@@ -50,6 +50,9 @@ map <A-j> :wincmd j<CR>
 map <A-h> :wincmd h<CR>
 map <A-l> :wincmd l<CR>
 
+" clear the highlight
+map <C-h> :nohl<cr>
+
 let mapleader=','
 if exists(":Tabularize")
   nmap \t= :Tabularize /=<CR>
@@ -103,6 +106,11 @@ Bundle 'ecomba/vim-ruby-refactoring'
 
 Bundle 'christoomey/vim-tmux-navigator'
 
+Bundle 'ervandew/screen'
+
+" plugin for displaying git diff in the gutter
+Bundle 'airblade/vim-gitgutter'
+
 filetype plugin indent on     " required!
 "
  " Brief help
@@ -127,3 +135,14 @@ augroup reload_vimrc " {
 
 let g:Powerline_symbols = 'unicode'
 let ruby_space_errors = 1
+
+" Screen settings
+let g:ScreenImpl = 'Tmux'
+let g:ScreenShellTmuxInitArgs = '-2'
+let g:ScreenShellInitialFocus = 'shell'
+let g:ScreenShellQuitOnVimExit = 0
+map <F5> :ScreenShellVertical<CR>
+command -nargs=? -complete=shellcmd W  :w | :call ScreenShellSend("load '".@%."';")
+map <Leader>r :w<CR> :call ScreenShellSend("rspec ".@% . ':' . line('.'))<CR>
+map <Leader>e :w<CR> :call ScreenShellSend("cucumber --format=pretty ".@% . ':' . line('.'))<CR>
+map <Leader>b :w<CR> :call ScreenShellSend("break ".@% . ':' . line('.'))<CR>
