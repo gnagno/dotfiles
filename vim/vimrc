@@ -51,7 +51,7 @@ map <A-h> :wincmd h<CR>
 map <A-l> :wincmd l<CR>
 
 " clear the highlight
-map <C-h> :nohl<cr>
+map <leader>h :nohl<cr>
 
 let mapleader=','
 if exists(":Tabularize")
