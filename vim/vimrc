@@ -2,7 +2,7 @@
 "           GENERAL SETTINGS
 " ===========================================
 syntax on 
-colorscheme pablo
+colorscheme ignazio
 
 set number
 set cursorline cursorcolumn
