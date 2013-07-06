@@ -1,37 +1,47 @@
-" ===========================================
-"           GENERAL SETTINGS
-" ===========================================
+" ================ General Settings  =================
+
 syntax on 
 colorscheme ignazio
 
 set number
 set cursorline cursorcolumn
 set backupdir=~/.tmp
-set directory=~/.tmp " Don't clutter my dirs up with swp and tmp files
-set hlsearch " highlight search results
-set showmatch " show matching brachets
-set scrolloff=8 " set 8 lines to the cursor when moving vertical
+set directory=~/.tmp      " Don't clutter my dirs up with swp and tmp files
+set hlsearch              " highlight search results
+set showmatch             " show matching brachets
+set scrolloff=8           " set 8 lines to the cursor when moving vertical
 set sidescrolloff=15
 set sidescroll=1
 set tabstop=2
 set shiftwidth=2
 set expandtab
-set nocompatible   " Disable vi-compatibility
-set laststatus=2   " Always show the statusline
-set encoding=utf-8 " Necessary to show Unicode glyphs
-set t_Co=256 " Explicitly tell Vim that the terminal supports 256 colors
+set nocompatible          " Disable vi-compatibility
+set laststatus=2          " Always show the statusline
+set encoding=utf-8        " Necessary to show Unicode glyphs
+set t_Co=256              " Explicitly tell Vim that the terminal supports 256 colors
 
+set autoread              " reloads the file if changed
 
-" ===========================================
-"         KEY MAPPINGS 
-" ===========================================
+let mapleader=','
+
+" ================ Search Settings  =================
+
+set incsearch             " Find the next match as we type the search
+set hlsearch              " Hilight searches by default
+set ignorecase            " Ignore case when searching...
+set smartcase             " ...unless we type a capital
+map <leader>h :nohl<cr> " clear the highlight
+
+" ================ Key mappings  =================
 " :nmap for normal mode mappings
 " :vmap for visual mode mappings
 " :imap for insert mode mappings
+
 map <C-f> :e.<cr> " CTRL+f open file browser
 map <C-b> :BufExplorer<cr>
 
-" Tab management mappings
+" ================ Tab management mappings =================
+
 map <C-up> :tabr<cr>
 map <C-down> :tabl<cr>
 map <C-left> :tabp<cr>
@@ -50,10 +60,6 @@ map <A-j> :wincmd j<CR>
 map <A-h> :wincmd h<CR>
 map <A-l> :wincmd l<CR>
 
-" clear the highlight
-map <leader>h :nohl<cr>
-
-let mapleader=','
 if exists(":Tabularize")
   nmap \t= :Tabularize /=<CR>
   vmap \t= :Tabularize /=<CR>
@@ -63,7 +69,7 @@ if exists(":Tabularize")
   vmap \t> :Tabularize /=><CR>
 endif
 
-" Will allow you to use :w!! to write to a file using sudo if you forgot to sudo vim file
+" Will allow to use :w!! to write to a file using sudo if you forgot to sudo vim file
 cmap w!! %!sudo tee > /dev/null %
 
 " ====================================================================
@@ -136,7 +142,8 @@ augroup reload_vimrc " {
 let g:Powerline_symbols = 'unicode'
 let ruby_space_errors = 1
 
-" Screen settings
+" ================ Screen settings =================
+
 let g:ScreenImpl = 'Tmux'
 let g:ScreenShellTmuxInitArgs = '-2'
 let g:ScreenShellInitialFocus = 'shell'
