@@ -6,6 +6,7 @@
   pr    = pull --rebase
   week  = log --all --pretty=format:'%h %cd %s (%an)' --since='7 days ago'
   lg    = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  lc    = log --name-status HEAD^..HEAD
 [color]
 	ui = auto
 [core]
