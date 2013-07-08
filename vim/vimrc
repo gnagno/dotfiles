@@ -111,3 +111,7 @@ map <Leader>b :w<CR> :call ScreenShellSend("break ".@% . ':' . line('.'))<CR>
 silent !mkdir ~/.vim/backups > /dev/null 2>&1
 set undodir=~/.vim/backups
 set undofile
+
+" ================ BufExplorer configuration ==============
+let g:bufExplorerSplitOutPathName=0  " Don't split the path and file name
+let g:bufExplorerShowRelativePath=1  " Show relative paths.
