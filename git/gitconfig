@@ -15,8 +15,6 @@
 	autocrlf = input
 [mergetool "meld"]
 	cmd = /usr/bin/meld
-[push]
-	default = simple
 [github]
 	user = gnagno
 [include]
