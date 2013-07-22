@@ -7,6 +7,7 @@
   week  = log --all --pretty=format:'%h %cd %s (%an)' --since='7 days ago'
   lg    = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
   lc    = log --name-status HEAD^..HEAD
+	search = !sh -c \"git branch -r | grep $1\"
 [color]
 	ui = auto
 [core]
