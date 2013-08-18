@@ -124,5 +124,5 @@ set undodir=~/.vim/backups
 set undofile
 
 " ================ BufExplorer configuration ==============
-let g:bufExplorerSplitOutPathName=0  " Don't split the path and file name
+let g:bufExplorerSplitOutPathName=1  " Split the path and file name
 let g:bufExplorerShowRelativePath=1  " Show relative paths.

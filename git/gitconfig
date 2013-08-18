@@ -8,6 +8,10 @@
   lg    = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
   lc    = log --name-status HEAD^..HEAD
 	search = !sh -c \"git branch -a | grep $1\"
+  mybranch = "!sh -c 'git branch --no-color 2> /dev/null' | sed -e '/^[^*]/d' -e 's/* \\(.*\\)/\\1/'"
+  update = "!sh -c 'git stash && git fetch origin && git fetch --tags origin && echo rebasing $(git mybranch) && git rebase origin/$(git mybranch) && git stash pop'"
+[help]
+  autocorrect = 1
 [color]
 	ui = auto
 [core]
