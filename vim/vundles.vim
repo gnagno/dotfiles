@@ -25,8 +25,9 @@ Bundle 'bufexplorer.zip'
 " dependencies for snipmate
 Bundle "MarcWeber/vim-addon-mw-utils" 
 Bundle "tomtom/tlib_vim"
-Bundle "honza/vim-snippets"
 Bundle "garbas/vim-snipmate"
+" snipmate snippets
+Bundle "honza/vim-snippets"
 
 Bundle 'ctrlp.vim'
 Bundle 'Lokaltog/vim-powerline'
@@ -40,8 +41,13 @@ Bundle 'christoomey/vim-tmux-navigator'
 
 Bundle 'ervandew/screen'
 
+" auto complete popup
+Bundle 'vim-scripts/AutoComplPop'
+
 " plugin for displaying git diff in the gutter
 Bundle 'airblade/vim-gitgutter'
+
+Bundle 'vimwiki/vimwiki'
 
 filetype plugin indent on     " required!
 "
