@@ -1,10 +1,11 @@
 " ================ General Settings  =================
 
 syntax on 
-colorscheme ignazio
+colorscheme jellybeans
 
 set number
 set cursorcolumn
+set cursorline
 set hlsearch              " highlight search results
 set showmatch             " show matching brachets
 set scrolloff=8           " set 8 lines to the cursor when moving vertical
@@ -105,8 +106,8 @@ let g:ScreenShellInitialFocus = 'shell'
 let g:ScreenShellQuitOnVimExit = 0
 map <F5> :ScreenShellVertical<CR>
 command -nargs=? -complete=shellcmd W  :w | :call ScreenShellSend("load '".@%."';")
-map <Leader>r :w<CR> :call ScreenShellSend("rspec ".@% . ':' . line('.'))<CR>
-map <Leader>e :w<CR> :call ScreenShellSend("cucumber --format=pretty ".@% . ':' . line('.'))<CR>
+map <Leader>r :w<CR> :call ScreenShellSend("spring rspec ".@% . ':' . line('.'))<CR>
+map <Leader>e :w<CR> :call ScreenShellSend("spring cucumber --format=pretty ".@% . ':' . line('.'))<CR>
 map <Leader>b :w<CR> :call ScreenShellSend("break ".@% . ':' . line('.'))<CR>
 
 " ================ Turn Off Swap Files ==============
