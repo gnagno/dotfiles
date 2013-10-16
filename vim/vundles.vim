@@ -47,6 +47,8 @@ Bundle 'vim-scripts/AutoComplPop'
 " plugin for displaying git diff in the gutter
 Bundle 'airblade/vim-gitgutter'
 
+Bundle 'tpope/vim-fugitive'
+
 Bundle 'vimwiki/vimwiki'
 
 filetype plugin indent on     " required!
