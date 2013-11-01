@@ -82,6 +82,10 @@ endif
 " Will allow to use :w!! to write to a file using sudo if you forgot to sudo vim file
 cmap w!! %!sudo tee > /dev/null %
 
+" =============== vimwiki options ===============
+let g:vimwiki_home = "~/Dropbox/wiki/vimwiki_home/"
+let g:vimwiki_home_html = '~/Dropbox/wiki/vimwiki_home_html/'
+
 " =============== Vundle Initialization ===============
 " " This loads all the plugins specified in ~/.dotfiles/vim/vundle.vim
 " " Use Vundle plugin to manage all other plugins
