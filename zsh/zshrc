@@ -42,6 +42,9 @@ DISABLE_CORRECTION="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git rails ruby)
 
+# fix for git bug
+setopt NO_NOMATCH
+
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
