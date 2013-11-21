@@ -23,6 +23,7 @@ set autoread              " reloads the file if changed
 
 let mapleader=','
 
+map <Leader>m :set cursorline! cursorcolumn!<CR>
 " ================ Search Settings  =================
 
 set incsearch             " Find the next match as we type the search
