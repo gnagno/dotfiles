@@ -32,3 +32,5 @@ alias be='bundle exec'
 alias ber='bundle exec rails'
 alias bers='bundle exec rails s'
 alias berc='bundle exec rails c'
+
+alias tumx='tmux -2'
