@@ -103,6 +103,9 @@ augroup reload_vimrc " {
 let g:Powerline_symbols = 'unicode'
 let ruby_space_errors = 1
 
+" ================ Tagbar settings =================
+nnoremap <leader>l :TagbarToggle<CR>
+
 " ================ Screen settings =================
 
 let g:ScreenImpl = 'Tmux'

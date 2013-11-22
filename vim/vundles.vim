@@ -51,6 +51,15 @@ Bundle 'tpope/vim-fugitive'
 
 Bundle 'vimwiki/vimwiki'
 
+Bundle 'scrooloose/nerdcommenter'
+
+" automatic closing of quotes, parenthesis, brackets, etc.
+Bundle 'Raimondi/delimitMate'
+
+Bundle 'majutsushi/tagbar'
+
+Bundle 'git://git.wincent.com/command-t.git'
+
 filetype plugin indent on     " required!
 "
  " Brief help
