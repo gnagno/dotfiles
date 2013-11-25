@@ -4,8 +4,6 @@ syntax on
 colorscheme jellybeans
 
 set number
-set cursorcolumn
-set cursorline
 set hlsearch              " highlight search results
 set showmatch             " show matching brachets
 set scrolloff=8           " set 8 lines to the cursor when moving vertical
@@ -23,6 +21,7 @@ set autoread              " reloads the file if changed
 
 let mapleader=','
 
+" toggle cursorline and cursorcolumn on and off
 map <Leader>m :set cursorline! cursorcolumn!<CR>
 " ================ Search Settings  =================
 
