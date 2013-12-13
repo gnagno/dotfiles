@@ -49,7 +49,11 @@ Bundle 'airblade/vim-gitgutter'
 
 Bundle 'tpope/vim-fugitive'
 
+Bundle 'tpope/vim-endwise'
+
 Bundle 'vimwiki/vimwiki'
+
+Bundle 'tomtom/tcomment_vim'
 
 Bundle 'scrooloose/nerdcommenter'
 
@@ -59,6 +63,9 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'majutsushi/tagbar'
 
 Bundle 'git://git.wincent.com/command-t.git'
+
+" checks the syntax of ruby file on buffer save
+Bundle 'tomtom/checksyntax_vim'
 
 filetype plugin indent on     " required!
 "
