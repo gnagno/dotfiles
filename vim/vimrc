@@ -4,6 +4,7 @@ syntax on
 colorscheme jellybeans
 
 set number
+set relativenumber        " numbers are relative to the cursor position
 set hlsearch              " highlight search results
 set showmatch             " show matching brachets
 set scrolloff=8           " set 8 lines to the cursor when moving vertical
@@ -52,7 +53,7 @@ map <C-b> :BufExplorer<cr>
 
 " ================ Rails specific stuff ====================
 
-map <Leader>p :normal O binding.pry<ESC> 
+map <Leader>p :normal Obinding.pry<ESC> 
 
 " ================ Tab management mappings =================
 
