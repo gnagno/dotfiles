@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+DISP_ID=$(w | grep gdm-session | tr -s ' ' | cut -d ' ' -f 2)
+
+echo "current display is: "$DISPLAY
+DISPLAY="$DISP_ID.0" gnome-shell --replace &
