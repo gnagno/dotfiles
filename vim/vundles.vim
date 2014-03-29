@@ -58,6 +58,8 @@ Bundle 'tomtom/tcomment_vim'
 
 Bundle 'scrooloose/nerdcommenter'
 
+Bundle 'terryma/vim-multiple-cursors'
+
 " automatic closing of quotes, parenthesis, brackets, etc.
 Bundle 'Raimondi/delimitMate'
 
