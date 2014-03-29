@@ -18,7 +18,8 @@ Bundle 'tpope/vim-rails.git'
 " tabular
 Bundle 'godlygeek/tabular' 
 
-Bundle 'netrw.vim'
+" Bundle 'netrw.vim'
+Bundle 'scrooloose/nerdtree'
 " buffer explorer
 Bundle 'bufexplorer.zip' 
 
@@ -65,7 +66,8 @@ Bundle 'majutsushi/tagbar'
 Bundle 'git://git.wincent.com/command-t.git'
 
 " checks the syntax of ruby file on buffer save
-Bundle 'tomtom/checksyntax_vim'
+" Bundle 'tomtom/checksyntax_vim'
+Bundle 'scrooloose/syntastic'
 
 filetype plugin indent on     " required!
 "
