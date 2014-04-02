@@ -55,6 +55,10 @@ map <C-b> :BufExplorer<cr>
 
 map <Leader>p :normal Obinding.pry<ESC> 
 
+" ================ NerdTred ====================
+
+map <F9> <Esc>:NERDTreeToggle<CR><Esc>
+
 " ================ Tab management mappings =================
 
 map <C-up> :tabr<cr>
