@@ -22,6 +22,14 @@
 [merge]
 	tool = meld
 	autocrlf = input
+[branch]
+	autosetuprebase = always
+[push]
+	default = current
+[pull]
+	default = current
+[grep]
+  linenumber = true
 [mergetool "meld"]
 	cmd = /usr/bin/meld
 [github]
