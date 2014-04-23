@@ -12,6 +12,7 @@
   mybranch = "!sh -c 'git branch --no-color 2> /dev/null' | sed -e '/^[^*]/d' -e 's/* \\(.*\\)/\\1/'"
   update = "!sh -c 'git stash && git fetch origin && git fetch --tags origin && echo rebasing $(git mybranch) && git rebase origin/$(git mybranch) && git stash pop'"
   edit  = !sh -c \"vim $(git status -sb | grep "^ M" | awk '{print $2}')\"
+  ranks = shortlog -s -n
 [help]
   autocorrect = 1
 [color]
