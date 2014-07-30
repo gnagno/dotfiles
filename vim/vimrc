@@ -51,6 +51,10 @@ vnoremap <c-k> :m '<-2<CR>gv=gv
 map <C-f> :e.<cr> " CTRL+f open file browser
 map <C-b> :BufExplorer<cr>
 
+" move text and rehighlight -- vim tip_id=224
+vnoremap > ><CR>gv
+vnoremap < <<CR>gv
+
 " ================ Rails specific stuff ====================
 
 map <Leader>p :normal Obinding.pry<ESC> 
