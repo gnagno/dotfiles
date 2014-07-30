@@ -65,7 +65,8 @@ Bundle 'Raimondi/delimitMate'
 
 Bundle 'majutsushi/tagbar'
 
-Bundle 'git://git.wincent.com/command-t.git'
+" Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'wincent/Command-T'
 
 " checks the syntax of ruby file on buffer save
 " Bundle 'tomtom/checksyntax_vim'
