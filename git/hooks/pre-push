@@ -1,0 +1,52 @@
+#!/usr/bin/env ruby
+require 'pty'
+html_path = "rspec_results.html"
+
+# find out if there is any pending binding.pry
+def find_binding_pry
+  PTY.spawn( "git grep binding.pry | grep -v -E vendor/cache | wc -l" ) do |stdin, stdout, pid|
+    results = stdin.read.to_i
+
+    unless results.zero?
+      puts "Found #{results} binding.pry in your code"
+      exit 1
+    end
+  end
+end
+
+find_binding_pry
+begin
+  PTY.spawn( "rspec spec --format h > rspec_results.html" ) do |stdin, stdout, pid|
+  begin
+    stdin.each { |line| print line }
+  rescue Errno::EIO
+  end
+end
+rescue PTY::ChildExited
+  puts "Child process exit!"
+end
+
+# find out if there were any errors
+html = open(html_path).read
+examples = html.match(/(\d+) examples/)[0].to_i rescue 0
+errors = html.match(/(\d+) errors/)[0].to_i rescue 0
+if errors == 0 then
+  errors = html.match(/(\d+) failure/)[0].to_i rescue 0
+end
+pending = html.match(/(\d+) pending/)[0].to_i rescue 0
+
+if errors.zero?
+  puts "0 failed! #{examples} run, #{pending} pending"
+  # HTML Output when tests ran successfully:
+  # puts "View spec results at #{File.expand_path(html_path)}"
+  sleep 1
+  exit 0
+else
+  puts "\aCOMMIT FAILED!!"
+  puts "View your rspec results at #{File.expand_path(html_path)}"
+  puts
+  puts "#{errors} failed! #{examples} run, #{pending} pending"
+  # Open HTML Ooutput when tests failed
+  `open #{html_path}`
+  exit 1
+end
