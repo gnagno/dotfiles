@@ -39,6 +39,7 @@ if errors.zero?
   puts "0 failed! #{examples} run, #{pending} pending"
   # HTML Output when tests ran successfully:
   # puts "View spec results at #{File.expand_path(html_path)}"
+  `rm #{html_path}`
   sleep 1
   exit 0
 else
