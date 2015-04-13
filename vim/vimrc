@@ -152,3 +152,11 @@ set undofile
 " ================ BufExplorer configuration ==============
 let g:bufExplorerSplitOutPathName=1  " Split the path and file name
 let g:bufExplorerShowRelativePath=1  " Show relative paths.
+
+function! StartUp()
+  if 0 == argc()
+    NERDTree
+  end
+endfunction
+
+autocmd VimEnter * call StartUp()
