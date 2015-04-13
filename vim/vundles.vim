@@ -72,6 +72,8 @@ Bundle 'wincent/Command-T'
 " Bundle 'tomtom/checksyntax_vim'
 Bundle 'scrooloose/syntastic'
 
+Bundle 'osyo-manga/vim-brightest'
+
 filetype plugin indent on     " required!
 "
  " Brief help
