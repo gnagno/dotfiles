@@ -74,6 +74,8 @@ Bundle 'scrooloose/syntastic'
 
 Bundle 'osyo-manga/vim-brightest'
 
+Bundle 'ngmy/vim-rubocop'
+
 filetype plugin indent on     " required!
 "
  " Brief help
