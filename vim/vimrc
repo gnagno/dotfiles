@@ -57,10 +57,6 @@ map <C-b> :BufExplorer<cr>
 vnoremap > ><CR>gv
 vnoremap < <<CR>gv
 
-" ================ Rails specific stuff ====================
-
-map <Leader>p :normal Obinding.pry<ESC> 
-
 " ================ NerdTred ====================
 
 map <F9> <Esc>:NERDTreeToggle<CR><Esc>
@@ -135,7 +131,7 @@ map <Leader>b :w<CR> :call ScreenShellSend("break ".@% . ':' . line('.'))<CR>
 
 " ================ Rails specific stuff =============
 
-map <Leader>p :normal O binding.pry<ESC>
+map <Leader>p :normal Obinding.pry<ESC>
 
 " ================ Turn Off Swap Files ==============
 
