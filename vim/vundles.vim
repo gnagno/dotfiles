@@ -76,6 +76,8 @@ Bundle 'osyo-manga/vim-brightest'
 
 Bundle 'ngmy/vim-rubocop'
 
+Bundle 'fatih/vim-go'
+
 filetype plugin indent on     " required!
 "
  " Brief help
