@@ -45,6 +45,12 @@ inoremap <c-k> <Esc>:m .-2<CR>==gi
 vnoremap <c-j> :m '>+1<CR>gv=gv
 vnoremap <c-k> :m '<-2<CR>gv=gv
 
+" ================ Auto-save file on leave insert mode  =================
+autocmd InsertLeave * if expand('%') != '' | update | endif
+
+" ================ Quit insert mode with jk  =================
+inoremap jk <Esc>
+
 " ================ Key mappings  =================
 " :nmap for normal mode mappings
 " :vmap for visual mode mappings
