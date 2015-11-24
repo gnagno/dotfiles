@@ -65,7 +65,10 @@ vnoremap < <<CR>gv
 
 " ================ NerdTred ====================
 
+" toggle NERDTree with F9
 map <F9> <Esc>:NERDTreeToggle<CR><Esc>
+" close vim when the only window left is NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " ================ Tab management mappings =================
 
