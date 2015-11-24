@@ -20,15 +20,17 @@ Bundle 'godlygeek/tabular'
 
 " Bundle 'netrw.vim'
 Bundle 'scrooloose/nerdtree'
+" A plugin of NERDTree showing git status
+Bundle 'Xuyuanp/nerdtree-git-plugin'
 " buffer explorer
 Bundle 'bufexplorer.zip' 
 
-" dependencies for snipmate
-Bundle "MarcWeber/vim-addon-mw-utils" 
-Bundle "tomtom/tlib_vim"
-Bundle "garbas/vim-snipmate"
-" snipmate snippets
-Bundle "honza/vim-snippets"
+" " dependencies for snipmate
+" Bundle "MarcWeber/vim-addon-mw-utils"
+" Bundle "tomtom/tlib_vim"
+" Bundle "garbas/vim-snipmate"
+" " snipmate snippets
+" Bundle "honza/vim-snippets"
 
 Bundle 'ctrlp.vim'
 Bundle 'Lokaltog/vim-powerline'
@@ -36,7 +38,7 @@ Bundle 'Lokaltog/vim-powerline'
 " ack plugin for searching in code
 Bundle 'mileszs/ack.vim'
 
-Bundle 'ecomba/vim-ruby-refactoring'
+" Bundle 'ecomba/vim-ruby-refactoring'
 
 Bundle 'christoomey/vim-tmux-navigator'
 
@@ -56,10 +58,6 @@ Bundle 'vimwiki/vimwiki'
 
 Bundle 'tomtom/tcomment_vim'
 
-Bundle 'scrooloose/nerdcommenter'
-
-Bundle 'terryma/vim-multiple-cursors'
-
 " automatic closing of quotes, parenthesis, brackets, etc.
 Bundle 'Raimondi/delimitMate'
 
@@ -71,8 +69,6 @@ Bundle 'wincent/Command-T'
 " checks the syntax of ruby file on buffer save
 " Bundle 'tomtom/checksyntax_vim'
 Bundle 'scrooloose/syntastic'
-
-Bundle 'osyo-manga/vim-brightest'
 
 Bundle 'ngmy/vim-rubocop'
 
