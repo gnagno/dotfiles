@@ -5,86 +5,98 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 " easymotion
-Bundle 'Lokaltog/vim-easymotion' 
+Plugin 'Lokaltog/vim-easymotion' 
 " rails git
-Bundle 'tpope/vim-rails.git' 
+Plugin 'tpope/vim-rails.git' 
 " tabular
-Bundle 'godlygeek/tabular' 
+Plugin 'godlygeek/tabular' 
 
-" Bundle 'netrw.vim'
-Bundle 'scrooloose/nerdtree'
+" Plugin 'netrw.vim'
+Plugin 'scrooloose/nerdtree'
 " A plugin of NERDTree showing git status
-Bundle 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 " buffer explorer
-Bundle 'bufexplorer.zip' 
+Plugin 'bufexplorer.zip' 
 
-" " dependencies for snipmate
-" Bundle "MarcWeber/vim-addon-mw-utils"
-" Bundle "tomtom/tlib_vim"
-" Bundle "garbas/vim-snipmate"
-" " snipmate snippets
-" Bundle "honza/vim-snippets"
+" dependencies for snipmate
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+" snipmate snippets
+Plugin 'honza/vim-snippets'
 
-Bundle 'ctrlp.vim'
-Bundle 'Lokaltog/vim-powerline'
+Plugin 'ctrlp.vim'
+Plugin 'Lokaltog/vim-powerline'
 
 " ack plugin for searching in code
-Bundle 'mileszs/ack.vim'
+Plugin 'mileszs/ack.vim'
 
-" Bundle 'ecomba/vim-ruby-refactoring'
+" Plugin 'ecomba/vim-ruby-refactoring'
 
-Bundle 'christoomey/vim-tmux-navigator'
+Plugin 'christoomey/vim-tmux-navigator'
 
-Bundle 'ervandew/screen'
+Plugin 'ervandew/screen'
 
 " auto complete popup
-Bundle 'vim-scripts/AutoComplPop'
+Plugin 'vim-scripts/AutoComplPop'
 
 " plugin for displaying git diff in the gutter
-Bundle 'airblade/vim-gitgutter'
+Plugin 'airblade/vim-gitgutter'
 
-Bundle 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 
-Bundle 'tpope/vim-endwise'
+Plugin 'tpope/vim-endwise'
 
-Bundle 'vimwiki/vimwiki'
+Plugin 'vimwiki/vimwiki'
 
-Bundle 'tomtom/tcomment_vim'
+Plugin 'tomtom/tcomment_vim'
 
 " automatic closing of quotes, parenthesis, brackets, etc.
-Bundle 'Raimondi/delimitMate'
+Plugin 'Raimondi/delimitMate'
 
-Bundle 'majutsushi/tagbar'
+Plugin 'majutsushi/tagbar'
 
-" Bundle 'git://git.wincent.com/command-t.git'
-Bundle 'wincent/Command-T'
+" Plugin 'git://git.wincent.com/command-t.git'
+Plugin 'wincent/Command-T'
 
 " checks the syntax of ruby file on buffer save
-" Bundle 'tomtom/checksyntax_vim'
-Bundle 'scrooloose/syntastic'
+" Plugin 'tomtom/checksyntax_vim'
+" Plugin 'scrooloose/syntastic'
 
-Bundle 'ngmy/vim-rubocop'
+Plugin 'ngmy/vim-rubocop'
 
-Bundle 'fatih/vim-go'
+Plugin 'slashmili/alchemist.vim'
+Plugin 'elixir-editors/vim-elixir'
 
-filetype plugin indent on     " required!
+Plugin 'neomake/neomake'
+
+Plugin 'pangloss/vim-javascript'
+
+Plugin 'fatih/vim-go'
+
+Plugin 'rbong/vim-flog'
+
+" Plugin 'w0rp/ale'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
 "
  " Brief help
  " kaltog/vim-easymotion'
- " :BundleList          - list configured bundles
- " :BundleInstall(!)    - install(update) bundles
- " :BundleSearch(!) foo - search(or refresh cache first) for foo
- " :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+ " :PluginList          - list configured bundles
+ " :PluginInstall(!)    - install(update) bundles
+ " :PluginSearch(!) foo - search(or refresh cache first) for foo
+ " :PluginClean(!)      - confirm(or auto-approve) removal of unused bundles
  "
  " see :h vundle for more details or wiki for FAQ
- " NOTE: comments after Bundle command are not allowed..
+ " NOTE: comments after Plugin command are not allowed..
 
 " ====================================================================
 " End of Vundle configuration
